@@ -1,0 +1,694 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The AI-Augmented Freelance Trainer — Complete Playbook</title>
+  <meta name="description" content="The complete playbook for freelance trainers: roadmap to paid bookings, resilience mindset, pricing architecture, 30-day sprint, and 16 copy-ready AI prompts." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="min-h-screen bg-[var(--cream)] text-[var(--ink)] overflow-x-clip paper-texture">
+  <!-- Reading Progress Bar -->
+  <div class="fixed left-0 right-0 top-0 h-[4px] bg-[var(--line)] z-[60]">
+    <div id="reading-progress" class="h-full bg-[var(--orange)] transition-[width] duration-150" style="width: 0%"></div>
+  </div>
+
+  <!-- Sticky Top Header -->
+  <header class="sticky top-0 z-50 bg-[var(--cream)]/95 backdrop-blur border-b border-[var(--line)]">
+    <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 h-[62px] flex items-center justify-between gap-3">
+      <a href="#top" class="flex items-center gap-2.5 min-w-0">
+        <span class="w-9 h-9 rounded-full bg-[var(--orange)] text-white grid place-items-center font-black serif shrink-0">A</span>
+        <span class="leading-none min-w-0">
+          <span class="block serif font-black text-[15px] sm:text-lg truncate">The AI-Augmented Trainer</span>
+          <span class="block text-[10px] tracking-[0.2em] uppercase text-[var(--muted)]">Complete Playbook · Editorial Edition</span>
+        </span>
+      </a>
+      <nav class="hidden lg:flex items-center gap-1 text-[13px] font-semibold">
+        <a href="#part1" data-nav-desktop="part1" class="px-3 py-2 rounded-full hover:bg-[var(--cream-3)]">Part I · Roadmap</a>
+        <a href="#part2" data-nav-desktop="part2" class="px-3 py-2 rounded-full hover:bg-[var(--cream-3)]">Part II · Mindset</a>
+        <a href="#part3" data-nav-desktop="part3" class="px-3 py-2 rounded-full hover:bg-[var(--cream-3)]">Part III · Business</a>
+        <a href="#part4" data-nav-desktop="part4" class="px-3 py-2 rounded-full hover:bg-[var(--cream-3)]">Part IV · Prompt Library</a>
+        <a href="#sprint" data-nav-desktop="sprint" class="px-3 py-2 rounded-full hover:bg-[var(--cream-3)]">30-Day Sprint</a>
+      </nav>
+      <a href="#part4" class="shrink-0 bg-[var(--ink)] text-[var(--cream)] text-xs sm:text-sm font-bold px-3.5 sm:px-4 py-2.5 rounded-full flex items-center gap-1.5">
+        <span>16 Prompts</span><span>↗</span>
+      </a>
+    </div>
+    <div class="lg:hidden overflow-x-auto whitespace-nowrap px-4 pb-2 flex gap-2 [scrollbar-width:none]">
+      <a href="#top" data-nav-mobile="top" class="text-xs font-bold px-3 py-1.5 rounded-full border shrink-0 bg-[var(--ink)] text-[var(--cream)] border-[var(--ink)]">Overview</a>
+      <a href="#part1" data-nav-mobile="part1" class="text-xs font-bold px-3 py-1.5 rounded-full border shrink-0 bg-white/60 border-[var(--line)]">Part I · Roadmap</a>
+      <a href="#part2" data-nav-mobile="part2" class="text-xs font-bold px-3 py-1.5 rounded-full border shrink-0 bg-white/60 border-[var(--line)]">Part II · Mindset</a>
+      <a href="#part3" data-nav-mobile="part3" class="text-xs font-bold px-3 py-1.5 rounded-full border shrink-0 bg-white/60 border-[var(--line)]">Part III · Business</a>
+      <a href="#part4" data-nav-mobile="part4" class="text-xs font-bold px-3 py-1.5 rounded-full border shrink-0 bg-white/60 border-[var(--line)]">Part IV · Prompt Library</a>
+      <a href="#sprint" data-nav-mobile="sprint" class="text-xs font-bold px-3 py-1.5 rounded-full border shrink-0 bg-white/60 border-[var(--line)]">30-Day Sprint</a>
+    </div>
+  </header>
+
+  <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="lg:grid lg:grid-cols-[248px_1fr] lg:gap-10 xl:gap-12">
+      <!-- Desktop Sidebar -->
+      <aside class="hidden lg:block">
+        <div class="sticky top-[86px] pt-8 pb-8">
+          <p class="text-[11px] font-black tracking-[0.22em] uppercase text-[var(--muted)] mb-4">Contents</p>
+          <nav class="space-y-1">
+            <a href="#top" data-nav-sidebar="top" class="flex gap-3 items-start px-3 py-3 rounded-2xl border bg-[var(--ink)] text-[var(--cream)] border-[var(--ink)]">
+              <span class="serif font-black text-sm w-6 shrink-0 opacity-70">00</span>
+              <span class="text-[13px] font-bold leading-tight">Overview</span>
+            </a>
+            <a href="#part1" data-nav-sidebar="part1" class="flex gap-3 items-start px-3 py-3 rounded-2xl border border-transparent hover:bg-[var(--cream-2)]">
+              <span class="serif font-black text-sm w-6 shrink-0 opacity-70">I</span>
+              <span class="text-[13px] font-bold leading-tight">Part I · Roadmap</span>
+            </a>
+            <a href="#part2" data-nav-sidebar="part2" class="flex gap-3 items-start px-3 py-3 rounded-2xl border border-transparent hover:bg-[var(--cream-2)]">
+              <span class="serif font-black text-sm w-6 shrink-0 opacity-70">II</span>
+              <span class="text-[13px] font-bold leading-tight">Part II · Mindset</span>
+            </a>
+            <a href="#part3" data-nav-sidebar="part3" class="flex gap-3 items-start px-3 py-3 rounded-2xl border border-transparent hover:bg-[var(--cream-2)]">
+              <span class="serif font-black text-sm w-6 shrink-0 opacity-70">III</span>
+              <span class="text-[13px] font-bold leading-tight">Part III · Business</span>
+            </a>
+            <a href="#part4" data-nav-sidebar="part4" class="flex gap-3 items-start px-3 py-3 rounded-2xl border border-transparent hover:bg-[var(--cream-2)]">
+              <span class="serif font-black text-sm w-6 shrink-0 opacity-70">IV</span>
+              <span class="text-[13px] font-bold leading-tight">Part IV · Prompt Library</span>
+            </a>
+            <a href="#sprint" data-nav-sidebar="sprint" class="flex gap-3 items-start px-3 py-3 rounded-2xl border border-transparent hover:bg-[var(--cream-2)]">
+              <span class="serif font-black text-sm w-6 shrink-0 opacity-70">30</span>
+              <span class="text-[13px] font-bold leading-tight">30-Day Sprint</span>
+            </a>
+          </nav>
+          <div class="mt-6 rounded-[20px] bg-[var(--teal)] text-white p-5">
+            <p class="serif font-bold text-lg leading-tight">One niche. One framework. One channel.</p>
+            <p class="text-[13px] leading-relaxed mt-2 opacity-90">One circle. One price you state without flinching. That is the whole business.</p>
+            <a href="#sprint" class="mt-4 inline-flex items-center gap-1 bg-white text-black text-xs font-black px-3 py-2 rounded-full">Start the sprint →</a>
+          </div>
+          <p class="mt-5 text-xs leading-relaxed text-[var(--muted)]">Reading time · Long-form playbook<br />Best read in one focused sitting.</p>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <main id="top" class="min-w-0 pt-6 sm:pt-9 pb-16">
+        <!-- HERO -->
+        <section class="reveal">
+          <div class="flex flex-wrap gap-2 mb-5">
+            <span class="text-[11px] font-black tracking-[0.16em] uppercase bg-[var(--amber-soft)] border border-[var(--amber)] px-3 py-1.5 rounded-full">Freelance Training · AI Operating System</span>
+            <span class="text-[11px] font-black tracking-[0.16em] uppercase bg-[var(--surface)] border border-[var(--line)] px-3 py-1.5 rounded-full flex items-center gap-1.5">
+              <span class="w-2 h-2 rounded-full bg-emerald-500 pulse-dot"></span> From blank slate to five-figure engagements
+            </span>
+          </div>
+          <h1 class="serif font-black leading-[0.88] tracking-[-0.03em] text-[clamp(2.9rem,8.2vw,6.8rem)] [overflow-wrap:anywhere]">
+            The AI-Augmented<br />
+            <span class="italic font-semibold text-[var(--orange)]">Freelance Trainer</span><br />
+            <span class="text-[clamp(1.55rem,3.8vw,3.2rem)] leading-[1.05] block mt-3 font-bold">The Complete Playbook for Paid Bookings, Premium Pricing, and Unshakeable Confidence</span>
+          </h1>
+
+          <div class="mt-7 grid lg:grid-cols-[1.15fr_0.85fr] gap-5 items-stretch">
+            <div class="bg-[var(--surface)] border border-[var(--line)] rounded-[26px] p-5 sm:p-7 shadow-[0_18px_40px_rgba(30,27,22,0.08)]">
+              <div class="flex items-center gap-3">
+                <div class="w-11 h-11 rounded-full bg-[var(--teal)] text-white grid place-items-center serif font-black text-xl">✦</div>
+                <div>
+                  <p class="text-[11px] tracking-[0.18em] uppercase font-black text-[var(--orange)]">Author-style intro</p>
+                  <p class="font-bold text-sm">A tight, repeatable operating manual — not another hustle list.</p>
+                </div>
+              </div>
+              <p class="mt-4 text-[15px] sm:text-[16px] leading-[1.75]">Most freelance trainers do not fail because they lack talent. They fail because they confuse motion with traction.</p>
+              <p class="mt-3 text-[15px] sm:text-[16px] leading-[1.75]">They spend months perfecting a logo, researching business structures, and posting on four platforms. It feels like building a business. It is actually sophisticated procrastination: busywork that keeps you safe from rejection and comfortably invisible.</p>
+              <p class="mt-3 text-[15px] sm:text-[16px] leading-[1.75]">A sustainable solo training practice does not require an agency's infrastructure. It requires a tight, repeatable flywheel:</p>
+              <div class="mt-4 flex flex-wrap gap-1.5 text-[12px] font-bold">
+                <span class="bg-[var(--ink)] text-[var(--cream)] px-2.5 py-1.5 rounded-full">Isolate an acute problem</span><span class="text-[var(--orange)] self-center">›</span>
+                <span class="bg-[var(--ink)] text-[var(--cream)] px-2.5 py-1.5 rounded-full">Package proprietary IP</span><span class="text-[var(--orange)] self-center">›</span>
+                <span class="bg-[var(--ink)] text-[var(--cream)] px-2.5 py-1.5 rounded-full">Demonstrate low-risk authority</span><span class="text-[var(--orange)] self-center">›</span>
+                <span class="bg-[var(--ink)] text-[var(--cream)] px-2.5 py-1.5 rounded-full">Convert high-ticket bookings</span><span class="text-[var(--orange)] self-center">›</span>
+                <span class="bg-[var(--ink)] text-[var(--cream)] px-2.5 py-1.5 rounded-full">Deliver so well they refer you</span><span class="text-[var(--orange)] self-center">›</span>
+                <span class="bg-[var(--ink)] text-[var(--cream)] px-2.5 py-1.5 rounded-full">Repeat</span>
+              </div>
+              <p class="mt-4 text-[15px] sm:text-[16px] leading-[1.75]">Pair that flywheel with AI as a tireless chief of staff, and weeks of guesswork compress into afternoon sprints. AI does not replace your stories, judgment, or presence. It handles structure, pattern recognition, and rapid prototyping so you can show up sharper, faster, and more human.</p>
+              <p class="mt-3 font-bold">This is the complete operating manual, from blank slate to five-figure engagements.</p>
+              <div class="mt-5 pt-5 border-t border-dashed border-[var(--line)] flex flex-wrap gap-2">
+                <a href="#part1" class="bg-[var(--orange)] text-white px-4 py-2.5 rounded-full text-sm font-bold flex items-center gap-1.5">Begin Part I →</a>
+                <a href="#part4" class="bg-[var(--cream-2)] px-4 py-2.5 rounded-full text-sm font-bold">Jump to Prompt Library</a>
+                <a href="#sprint" class="border border-[var(--line)] px-4 py-2.5 rounded-full text-sm font-bold">30-Day Sprint ↓</a>
+              </div>
+            </div>
+
+            <!-- Flywheel diagram -->
+            <div class="relative rounded-[26px] overflow-hidden bg-[var(--ink)] text-[var(--cream)] p-5 sm:p-6 flex flex-col">
+              <div class="flex justify-between items-start">
+                <div>
+                  <p class="text-[11px] tracking-[0.2em] uppercase font-black text-[var(--amber)]">Animated Diagram · 01</p>
+                  <h3 class="serif text-2xl font-black leading-tight mt-1">The Paid-Bookings<br />Flywheel</h3>
+                </div>
+                <span class="bg-white/10 px-2.5 py-1 rounded-full text-[11px] font-bold">REPEAT → COMPOUND</span>
+              </div>
+              <div class="relative mx-auto my-6 w-[240px] h-[240px] sm:w-[270px] sm:h-[270px] shrink-0">
+                <div class="absolute inset-0 rounded-full border border-dashed border-white/30 flywheel-spin">
+                  <span class="absolute -translate-x-1/2 -translate-y-1/2 bg-[var(--amber)] text-black text-[9px] font-black px-2 py-1 rounded-full whitespace-nowrap" style="left: 50%; top: 8%;">ISOLATE</span>
+                  <span class="absolute -translate-x-1/2 -translate-y-1/2 bg-[var(--amber)] text-black text-[9px] font-black px-2 py-1 rounded-full whitespace-nowrap" style="left: 86.36%; top: 29%;">PACKAGE</span>
+                  <span class="absolute -translate-x-1/2 -translate-y-1/2 bg-[var(--amber)] text-black text-[9px] font-black px-2 py-1 rounded-full whitespace-nowrap" style="left: 86.36%; top: 71%;">DEMONSTRATE</span>
+                  <span class="absolute -translate-x-1/2 -translate-y-1/2 bg-[var(--amber)] text-black text-[9px] font-black px-2 py-1 rounded-full whitespace-nowrap" style="left: 50%; top: 92%;">CONVERT</span>
+                  <span class="absolute -translate-x-1/2 -translate-y-1/2 bg-[var(--amber)] text-black text-[9px] font-black px-2 py-1 rounded-full whitespace-nowrap" style="left: 13.64%; top: 71%;">DELIVER</span>
+                  <span class="absolute -translate-x-1/2 -translate-y-1/2 bg-[var(--amber)] text-black text-[9px] font-black px-2 py-1 rounded-full whitespace-nowrap" style="left: 13.64%; top: 29%;">REPEAT</span>
+                </div>
+                <div class="absolute inset-[62px] rounded-full bg-[var(--orange)] grid place-items-center text-center p-3">
+                  <div>
+                    <p class="serif font-black text-2xl leading-none">Traction</p>
+                    <p class="text-[11px] mt-1 opacity-90">Not motion.<br />Momentum.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="grid grid-cols-3 gap-2 mt-auto">
+                <div class="bg-white/10 rounded-2xl p-3 text-center"><p class="serif text-2xl font-black">6</p><p class="text-[11px] opacity-80">Flywheel steps</p></div>
+                <div class="bg-white/10 rounded-2xl p-3 text-center"><p class="serif text-2xl font-black">16</p><p class="text-[11px] opacity-80">Copy-ready prompts</p></div>
+                <div class="bg-white/10 rounded-2xl p-3 text-center"><p class="serif text-2xl font-black">30</p><p class="text-[11px] opacity-80">Days to launch</p></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-5 rounded-[20px] border border-[var(--line)] bg-[var(--surface)] px-4 py-3">
+            <div class="flex flex-wrap justify-center gap-x-6 gap-y-1.5 text-[11px] sm:text-[12px] font-black tracking-[0.14em] uppercase text-center">
+              <span>Diagnose before you prescribe ✦</span>
+              <span>Never discount the fee — flex the scope ✦</span>
+              <span>AI cleans the signal. Humans supply belief ✦</span>
+              <span>Stop lowering your price. Start raising your clarity</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- PART I -->
+        <section id="part1" class="pt-14 sm:pt-20 scroll-mt-24">
+          <div class="mb-8 sm:mb-10">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="bg-[var(--ink)] text-[var(--cream)] serif text-sm font-bold px-3 py-1.5 rounded-full">PART I</span>
+              <span class="text-[11px] font-bold tracking-[0.22em] uppercase text-[var(--orange)]">The Roadmap to Paid Bookings</span>
+              <span class="h-px flex-1 bg-[var(--line)]"></span>
+            </div>
+            <h2 class="serif text-[clamp(2rem,5vw,3.6rem)] leading-[0.95] font-black tracking-[-0.02em]">From blank slate to booked.</h2>
+            <p class="mt-4 text-base sm:text-lg leading-relaxed text-[var(--muted)] max-w-3xl">Six moves, in order. No skipping ahead to the logo.</p>
+          </div>
+
+          <div class="rounded-[24px] bg-[var(--surface)] border border-[var(--line)] p-4 sm:p-5 mb-8 overflow-x-auto">
+            <p class="text-[11px] font-black tracking-[0.18em] uppercase text-[var(--muted)] mb-3">The roadmap · Follow left to right</p>
+            <div class="flex min-w-[720px] items-center gap-1">
+              <span class="flex-1 text-center text-[12px] font-black px-2 py-3 rounded-xl bg-[var(--orange)] text-white">1 · Niche</span><span class="text-[var(--orange)] font-black">→</span>
+              <span class="flex-1 text-center text-[12px] font-black px-2 py-3 rounded-xl bg-[var(--cream-2)]">2 · Signature IP</span><span class="text-[var(--orange)] font-black">→</span>
+              <span class="flex-1 text-center text-[12px] font-black px-2 py-3 rounded-xl bg-[var(--cream-2)]">3 · Keynote Engine</span><span class="text-[var(--orange)] font-black">→</span>
+              <span class="flex-1 text-center text-[12px] font-black px-2 py-3 rounded-xl bg-[var(--cream-2)]">4 · Channel</span><span class="text-[var(--orange)] font-black">→</span>
+              <span class="flex-1 text-center text-[12px] font-black px-2 py-3 rounded-xl bg-[var(--cream-2)]">5 · Founding Circle</span><span class="text-[var(--orange)] font-black">→</span>
+              <span class="flex-1 text-center text-[12px] font-black px-2 py-3 rounded-xl bg-[var(--cream-2)]">6 · Lean Ops</span>
+            </div>
+          </div>
+
+          <div class="space-y-12">
+            <!-- Move 1 -->
+            <article>
+              <div class="flex gap-4 items-baseline"><span class="serif text-5xl font-black text-[var(--orange)]">1</span><h3 class="serif text-[clamp(1.7rem,4vw,2.5rem)] font-black leading-none">Isolate the “Bleeding Neck” Problem</h3></div>
+              <p class="mt-4 leading-[1.8]">Corporate Learning &amp; Development leaders rarely have leftover budget for “nice-to-have” enrichment. They have urgent budget for fires they need to put out before the next quarterly review.</p>
+              <p class="mt-3 leading-[1.8]">Early on, I pitched myself as a “Communication Skills Trainer.” The response was polite nods and zero contracts. Everything shifted when I narrowed to a specific, costly bottleneck: “Helping newly promoted engineering managers run high-stakes technical reviews without micromanaging their teams.”</p>
+              <p class="mt-3 leading-[1.8]">When your niche is that sharp, two things happen: buyers immediately self-select, and your curriculum practically writes itself.</p>
+
+              <div class="grid sm:grid-cols-3 gap-3 my-6">
+                <div class="rounded-[20px] border border-[var(--line)] bg-[var(--surface)] p-5"><h4 class="font-black">Urgent</h4><p class="text-sm leading-relaxed text-[var(--muted)] mt-1">It is costing money, time, or reputation right now.</p></div>
+                <div class="rounded-[20px] border border-[var(--line)] bg-[var(--surface)] p-5"><h4 class="font-black">Visible to leadership</h4><p class="text-sm leading-relaxed text-[var(--muted)] mt-1">A VP can see it in a dashboard, attrition report, or missed deadline.</p></div>
+                <div class="rounded-[20px] border border-[var(--line)] bg-[var(--surface)] p-5"><h4 class="font-black">Expensive to ignore</h4><p class="text-sm leading-relaxed text-[var(--muted)] mt-1">The cost of inaction is larger than your fee.</p></div>
+              </div>
+
+              <blockquote class="my-9 relative rounded-[24px] bg-[var(--ink)] text-[var(--cream)] p-6 sm:p-9 overflow-hidden">
+                <p class="serif text-[clamp(1.4rem,3.2vw,2.1rem)] leading-[1.15] font-semibold italic">“Test your niche with this sentence: ‘I help [specific buyer] solve [specific costly problem] so they get [measurable outcome] in [timeframe].’”</p>
+                <footer class="mt-4 text-xs tracking-[0.18em] uppercase opacity-70">If you cannot fill in every blank with precision, you are still too generic.</footer>
+              </blockquote>
+
+              <div class="overflow-x-auto my-6 rounded-[20px] border border-[var(--line)] bg-[var(--surface)]">
+                <table class="w-full min-w-[620px] text-left text-sm">
+                  <thead><tr class="bg-[var(--ink)] text-[var(--cream)]"><th class="p-4">Positioning Dimension</th><th class="p-4">Generic (“Vitamin”)</th><th class="p-4 bg-[var(--teal)]">Specific (“Painkiller”)</th></tr></thead>
+                  <tbody class="[&>tr]:border-t [&>tr]:border-[var(--line)]">
+                    <tr><td class="p-4 font-bold">Title</td><td class="p-4">Leadership &amp; Communication Coach</td><td class="p-4 font-bold">Technical Transition Specialist for Senior Engineers</td></tr>
+                    <tr><td class="p-4 font-bold">Core Promise</td><td class="p-4">“Improve team collaboration and morale”</td><td class="p-4 font-bold">“Cut code-review bottlenecks by 40% in 60 days”</td></tr>
+                    <tr><td class="p-4 font-bold">Buyer Reaction</td><td class="p-4">“Send me your brochure; we'll keep you in mind.”</td><td class="p-4 font-bold">“When are you free to talk to our VP of Engineering?”</td></tr>
+                    <tr><td class="p-4 font-bold">Competition</td><td class="p-4">Everyone</td><td class="p-4 font-bold">Almost no one</td></tr>
+                    <tr><td class="p-4 font-bold">Price Anchor</td><td class="p-4">Compared to other trainers</td><td class="p-4 font-bold">Compared to cost of churn, delay, and rework</td></tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <p class="mt-3 leading-[1.8]">Where to find the pain: Look for trigger events. A company that just raised a Series B, doubled headcount, launched a new product line, had a public outage, or posted five roles for team leads is not buying “leadership development.” They are buying a solution to scaling pain.</p>
+
+              <aside class="my-7 rounded-[22px] border-l-4 p-5 sm:p-6 bg-[var(--amber-soft)] border-[var(--amber)]">
+                <p class="text-[11px] font-black tracking-[0.18em] uppercase text-[var(--orange)] mb-2">AI Accelerator · Voice-of-Customer Mining</p>
+                <p class="text-[15px] leading-relaxed">Scrape 15 to 20 raw posts from niche subreddits, Blind threads, or LinkedIn comment sections where your target audience vents. Feed them into an LLM to extract their exact vocabulary, the phrases they use at 11 PM when they are frustrated. Using their words in your outreach makes them feel like you have been reading their internal Slack channels. Do not invent the language. Borrow it, then mirror it back with precision.</p>
+              </aside>
+            </article>
+
+            <!-- Move 2 -->
+            <article>
+              <div class="flex gap-4 items-baseline"><span class="serif text-5xl font-black text-[var(--orange)]">2</span><h3 class="serif text-[clamp(1.7rem,4vw,2.5rem)] font-black leading-none">Architect Your Signature Program</h3></div>
+              <p class="mt-4 leading-[1.8]">Once the problem is locked in, resist the urge to build ten different workshops. Build one Signature Program: a proprietary, repeatable methodology that takes a client from Point A (the acute pain) to Point B (the measurable outcome).</p>
+
+              <div class="my-7 rounded-[22px] bg-[var(--surface)] border border-[var(--line)] p-5 sm:p-6">
+                <div class="flex justify-between flex-wrap gap-2"><p class="text-[11px] font-black tracking-[0.18em] uppercase">The 20 / 60 / 20 Facilitation Ratio</p><span class="text-xs font-bold bg-[var(--amber-soft)] px-2 py-1 rounded-full">Friction → Application → Commitment</span></div>
+                <div class="mt-4 flex flex-col sm:flex-row sm:h-[110px] rounded-2xl overflow-hidden text-white text-center">
+                  <div class="w-full sm:w-[20%] bg-[var(--teal)] flex sm:flex-col flex-row items-center sm:justify-center justify-between gap-2 px-3 py-3"><span class="serif text-2xl sm:text-3xl font-black shrink-0">20%</span><span class="text-[11px] font-bold leading-tight text-left sm:text-center">Tight Conceptual Framing</span></div>
+                  <div class="w-full sm:w-[60%] bg-[var(--orange)] flex sm:flex-col flex-row items-center sm:justify-center justify-between gap-2 px-3 py-3"><span class="serif text-2xl sm:text-3xl font-black shrink-0">60%</span><span class="text-[11px] font-bold leading-tight text-left sm:text-center">Hands-On Simulation, Roleplay &amp; Real Client Scenarios</span></div>
+                  <div class="w-full sm:w-[20%] bg-[var(--amber)] text-black flex sm:flex-col flex-row items-center sm:justify-center justify-between gap-2 px-3 py-3"><span class="serif text-2xl sm:text-3xl font-black shrink-0">20%</span><span class="text-[11px] font-bold leading-tight text-left sm:text-center">Structured Group Debrief &amp; Action Commitment</span></div>
+                </div>
+              </div>
+
+              <ul class="space-y-3 leading-[1.8] list-disc ml-5">
+                <li><strong>Name your framework:</strong> Give your 3 to 5 step process a sticky, proprietary name (e.g., The Clarity Loop or The 4-Gate Review). Naming transforms “good advice” into intellectual property that only you can teach. A named framework is memorable, referable, and defensible. It also makes your proposal feel like a product, not hours.</li>
+                <li><strong>Respect adult learning mechanics:</strong> Professionals do not learn through passive lectures; they learn through friction and application. Follow the 20/60/20 rule: 20% tight conceptual framing, 60% hands-on simulation and roleplay using their real workplace scenarios, and 20% structured debriefing and commitment.</li>
+                <li><strong>Design for transfer, not applause:</strong> A great workshop is not measured by smile sheets. It is measured by what changes on Monday morning. Every exercise should end with: What will you do differently, with whom, by when, and how will you know it worked?</li>
+                <li><strong>Engineer it like an accordion:</strong> Build your core modules so they expand or contract without losing structural integrity. The exact same IP should power a 60-minute keynote, a 3-hour executive intensive, and a 6-week cohort.</li>
+              </ul>
+
+              <div class="my-6 grid sm:grid-cols-3 gap-3">
+                <div class="rounded-[20px] p-5 border bg-[var(--surface)] border-[var(--line)]"><p class="text-[11px] tracking-[0.18em] uppercase font-black text-[var(--orange)]">◀ Compact</p><h4 class="serif font-black text-lg mt-2 leading-tight">60-Min Keynote</h4><p class="text-sm mt-1 text-[var(--muted)]">One model, one tool · Inspire + diagnose</p></div>
+                <div class="rounded-[20px] p-5 border bg-[var(--ink)] text-[var(--cream)]"><p class="text-[11px] tracking-[0.18em] uppercase font-black text-[var(--orange)]">◆ Standard Core</p><h4 class="serif font-black text-lg mt-2 leading-tight">3-Hour Executive Intensive</h4><p class="text-sm mt-1 opacity-80">Full framework + practice · Practice + feedback</p></div>
+                <div class="rounded-[20px] p-5 border bg-[var(--surface)] border-[var(--line)]"><p class="text-[11px] tracking-[0.18em] uppercase font-black text-[var(--orange)]">▶ Expanded</p><h4 class="serif font-black text-lg mt-2 leading-tight">6-Week Cohort</h4><p class="text-sm mt-1 text-[var(--muted)]">Full framework + coaching · Practice + accountability</p></div>
+              </div>
+
+              <div class="mt-5 rounded-[22px] bg-[var(--cream-2)] border border-[var(--line)] p-5 sm:p-6">
+                <h4 class="serif font-black text-xl">The Signature Program Blueprint:</h4>
+                <ol class="mt-3 space-y-2 list-decimal ml-5 leading-[1.8]">
+                  <li><strong>Diagnostic:</strong> How you assess the team's current state before day one</li>
+                  <li><strong>Core Framework:</strong> Your 3 to 5 step model, taught with stories and examples</li>
+                  <li><strong>Practice Lab:</strong> Real scenarios from their world, with live coaching</li>
+                  <li><strong>Action Protocol:</strong> Checklists, scripts, and decision tools they take back to work</li>
+                  <li><strong>Follow-up Loop:</strong> A 30-day check-in that locks in behavior change and creates your next testimonial</li>
+                </ol>
+              </div>
+
+              <aside class="my-7 rounded-[22px] border-l-4 p-5 sm:p-6 bg-[var(--amber-soft)] border-[var(--amber)]">
+                <p class="text-[11px] font-black tracking-[0.18em] uppercase text-[var(--orange)] mb-2">AI Accelerator · Curriculum &amp; Scenario Engine</p>
+                <p class="text-[15px] leading-relaxed">Feed your core 4-step methodology into an LLM and ask it to generate minute-by-minute facilitator run-of-show guides, participant workbook prompts, and edge-case roleplay scenarios tailored to the client's industry. Translate the same conflict-resolution exercise for fintech versus healthcare versus manufacturing. AI is unmatched at structural scaffolding. You supply the point of view, the stories, and the final judgment on what is actually usable in a real room.</p>
+              </aside>
+            </article>
+
+            <!-- Move 3 -->
+            <article>
+              <div class="flex gap-4 items-baseline"><span class="serif text-5xl font-black text-[var(--orange)]">3</span><h3 class="serif text-[clamp(1.7rem,4vw,2.5rem)] font-black leading-none">Weaponize Your Signature Presentation</h3></div>
+              <p class="mt-4 leading-[1.8]">Your Signature Presentation is not just a deliverable. It is your highest-converting sales asset. Whether delivered at an industry conference, a podcast interview, or a complimentary 45-minute corporate “lunch-and-learn,” this talk must deliver a genuine breakthrough while making the audience realize they need your full program to sustain it.</p>
+
+              <div class="my-6 grid sm:grid-cols-4 gap-2">
+                <div class="rounded-[18px] bg-[var(--surface)] border border-[var(--line)] p-4"><span class="serif text-3xl font-black text-[var(--orange)]">1</span><p class="font-black leading-tight mt-1">Visceral Pain</p><p class="text-xs text-[var(--muted)]">No bio fluff</p></div>
+                <div class="rounded-[18px] bg-[var(--surface)] border border-[var(--line)] p-4"><span class="serif text-3xl font-black text-[var(--orange)]">2</span><p class="font-black leading-tight mt-1">Named Framework</p><p class="text-xs text-[var(--muted)]">The missing lens</p></div>
+                <div class="rounded-[18px] bg-[var(--surface)] border border-[var(--line)] p-4"><span class="serif text-3xl font-black text-[var(--orange)]">3</span><p class="font-black leading-tight mt-1">Quick Win Tool</p><p class="text-xs text-[var(--muted)]">Immediate value</p></div>
+                <div class="rounded-[18px] bg-[var(--surface)] border border-[var(--line)] p-4"><span class="serif text-3xl font-black text-[var(--orange)]">4</span><p class="font-black leading-tight mt-1">Seamless Bridge</p><p class="text-xs text-[var(--muted)]">Invite to full IP</p></div>
+              </div>
+
+              <ul class="mt-4 space-y-3 leading-[1.8] list-disc ml-5">
+                <li><strong>Follow the Diagnosis-First Arc:</strong> Open with a visceral, recognizable failure mode from their world. No biographical throat-clearing, no “I'm so excited to be here.” Introduce your named framework as the missing mental model. Walk them through one immediately usable tool so they get a quick win in the room. Close with a frictionless bridge to working together: “If you want your team to run this live, with your real cases, that's what the full intensive is for.”</li>
+                <li><strong>Design slides as billboards, not teleprompters:</strong> If your audience is reading a wall of bullet points, they are not listening to you. One idea per slide, bold typography, clean conceptual diagrams. Your slides should make sense in 3 seconds and be useless without you.</li>
+                <li><strong>Capture a 3-minute sizzle reel:</strong> Corporate buyers are risk-averse; they will not put you in front of their executives without seeing how you command a room. Record every talk, even small ones, and edit together 180 seconds of your sharpest stories, room energy, and audience reactions. One great reel is worth 50 cold emails.</li>
+                <li><strong>Build the talk to be invited back:</strong> End with a question the audience cannot answer alone. That unresolved tension is what creates inbound inquiries.</li>
+              </ul>
+
+              <aside class="my-7 rounded-[22px] border-l-4 p-5 sm:p-6 bg-[var(--amber-soft)] border-[var(--amber)]">
+                <p class="text-[11px] font-black tracking-[0.18em] uppercase text-[var(--orange)] mb-2">AI Accelerator · Narrative Stress-Testing &amp; Delivery Audit</p>
+                <p class="text-[15px] leading-relaxed">Before stepping on stage, paste your talk outline into an LLM and prompt it to act as a distracted audience member, flagging every spot where attention might drift. Afterward, drop the transcript of your recorded talk into AI to spot verbal crutches (“um,” “sort of,” “right?”) and identify where your pacing rushed through key punchlines. Use AI to tighten the talk. Use humans to test whether it lands.</p>
+              </aside>
+            </article>
+
+            <!-- Move 4 -->
+            <article>
+              <div class="flex gap-4 items-baseline"><span class="serif text-5xl font-black text-[var(--orange)]">4</span><h3 class="serif text-[clamp(1.7rem,4vw,2.5rem)] font-black leading-none">Pick One Energy-Aligned Marketing Engine</h3></div>
+              <p class="mt-4 leading-[1.8]">Consistency beats ubiquity. Trying to be everywhere guarantees you will burn out in six weeks. Choose one primary distribution channel that matches how you naturally think and communicate, and commit to it for 90 days:</p>
+
+              <div class="grid sm:grid-cols-3 gap-3 my-5">
+                <div class="rounded-[20px] bg-[var(--surface)] border border-[var(--line)] p-5"><h4 class="font-black leading-tight">If you think best on paper</h4><p class="text-sm leading-relaxed mt-1 text-[var(--muted)]">Publish one deeply practical, zero-fluff breakdown per week on LinkedIn or Substack dissecting a specific problem in your niche.</p></div>
+                <div class="rounded-[20px] bg-[var(--surface)] border border-[var(--line)] p-5"><h4 class="font-black leading-tight">If you think best out loud</h4><p class="text-sm leading-relaxed mt-1 text-[var(--muted)]">Pitch yourself to 20 niche industry podcasts. Podcast hosts are constantly starving for articulate guests with fresh frameworks, and a 40-minute interview builds deeper trust than 100 tweets.</p></div>
+                <div class="rounded-[20px] bg-[var(--surface)] border border-[var(--line)] p-5"><h4 class="font-black leading-tight">If you thrive in 1-on-1 conversations</h4><p class="text-sm leading-relaxed mt-1 text-[var(--muted)]">Run a direct, warm outreach campaign to former colleagues, managers, and L&amp;D leads offering a no-pitch, 30-minute diagnostic workshop for their team.</p></div>
+              </div>
+
+              <p class="mt-3 leading-[1.8]">The 90-day rule matters. Most trainers quit a channel at day 21, right before compounding starts. Give one channel a full quarter before you judge it.</p>
+
+              <div class="my-6 rounded-[22px] bg-[var(--ink)] text-[var(--cream)] p-5 sm:p-6">
+                <p class="text-[11px] tracking-[0.18em] uppercase font-black text-[var(--amber)]">The weekly waterfall · One asset → a week of proof</p>
+                <div class="mt-4 grid sm:grid-cols-[1fr_auto_1fr] gap-3 items-center">
+                  <div class="bg-white/10 rounded-2xl p-4"><p class="font-black">1 CORE WEEKLY ASSET</p><p class="text-sm opacity-80">Newsletter OR Podcast Talk</p></div>
+                  <span class="text-[var(--amber)] font-black text-xl text-center">→</span>
+                  <div class="space-y-2">
+                    <div class="bg-[var(--orange)] rounded-xl px-3 py-2 text-sm font-bold">5 LinkedIn Posts — Varied Hook Angles</div>
+                    <div class="bg-[var(--teal)] rounded-xl px-3 py-2 text-sm font-bold">2 Short Video Clips — 60-Sec Vertical Insights</div>
+                    <div class="bg-[var(--amber)] text-black rounded-xl px-3 py-2 text-sm font-bold">1 Cold Outreach Hook — 3-Sentence Prospect Note</div>
+                  </div>
+                </div>
+              </div>
+
+              <p class="font-bold">The weekly cadence that actually works:</p>
+              <ul class="list-disc ml-5 mt-2 space-y-1 leading-[1.8]">
+                <li>Monday: Publish the core asset</li>
+                <li>Tuesday to Friday: Repurpose one angle per day, respond to every comment, and send one warm outreach message</li>
+                <li>Friday: Review what resonated, save the best language, feed it back into next week's asset</li>
+              </ul>
+              <p class="mt-3 leading-[1.8]">You do not need viral. You need 200 of the right people seeing you solve their exact problem, repeatedly.</p>
+
+              <aside class="my-7 rounded-[22px] border-l-4 p-5 sm:p-6 bg-[var(--amber-soft)] border-[var(--amber)]">
+                <p class="text-[11px] font-black tracking-[0.18em] uppercase text-[var(--orange)] mb-2">AI Accelerator · The Content Waterfall</p>
+                <p class="text-[15px] leading-relaxed">One core asset fuels your entire week. After you publish a 1,000-word newsletter or finish a podcast interview, feed the text or transcript into AI to fracture it into five distinct LinkedIn posts (each testing a different hook), two short-form video scripts, and a three-sentence outreach angle for prospects. You write once. AI repurposes. You edit with taste.</p>
+              </aside>
+            </article>
+
+            <!-- Move 5 -->
+            <article>
+              <div class="flex gap-4 items-baseline"><span class="serif text-5xl font-black text-[var(--orange)]">5</span><h3 class="serif text-[clamp(1.7rem,4vw,2.5rem)] font-black leading-none">Build a “Founding Circle” Before Scaling</h3></div>
+              <p class="mt-4 leading-[1.8]">You do not need a massive email list to land your first five paid clients; you need ten evangelists who have experienced your work firsthand.</p>
+              <ul class="list-disc ml-5 mt-3 space-y-3 leading-[1.8]">
+                <li><strong>Launch a paid Beta Cohort:</strong> Invite 6 to 10 ideal buyers into a pilot run of your Signature Program at 50% off your target rate. In exchange for the discount, require three things upfront: brutal feedback after every module, a specific case-study metric at the end, and a video testimonial if you deliver results. Paid beta is critical. Free participants do not show up, do not do the work, and do not give honest feedback.</li>
+                <li><strong>Form a Peer Alliance:</strong> Identify 3 to 5 non-competing consultants who serve your exact buyer (e.g., if you teach technical leadership, partner with an executive recruiter, a fractional CTO, and an agile coach). Meet monthly to trade market intelligence and warm introductions. One warm intro from a trusted peer is worth 100 cold emails.</li>
+                <li><strong>Turn every delivery into an asset:</strong> Every workshop should produce at least one testimonial, one case-study metric, one referral, and one piece of content. If it does not, you left value on the table.</li>
+              </ul>
+
+              <aside class="my-7 rounded-[22px] border-l-4 p-5 sm:p-6 bg-[var(--amber-soft)] border-[var(--amber)]">
+                <p class="text-[11px] font-black tracking-[0.18em] uppercase text-[var(--orange)] mb-2">AI Accelerator · Feedback Synthesis &amp; Warm Outreach</p>
+                <p class="text-[15px] leading-relaxed">After a beta cohort, dump all raw survey responses and chat logs into an LLM to cluster patterns, separating polite praise from the exact moments participants felt lost. For partner outreach, use AI to summarize a potential partner's recent podcast appearance or article so your introduction email proves you actually pay attention to their work.</p>
+              </aside>
+            </article>
+
+            <!-- Move 6 -->
+            <article>
+              <div class="flex gap-4 items-baseline"><span class="serif text-5xl font-black text-[var(--orange)]">6</span><h3 class="serif text-[clamp(1.7rem,4vw,2.5rem)] font-black leading-none">Keep Operational Infrastructure Paper-Thin</h3></div>
+              <p class="mt-4 leading-[1.8]">Until you cross six figures, complex tech stacks are just expensive distractions. You need three things to look legitimate and close deals fast:</p>
+              <ol class="list-decimal ml-5 mt-3 space-y-3 leading-[1.8]">
+                <li><strong>A high-converting one-sheet (PDF + simple landing page):</strong> Clear headline stating who you help and the outcome, a visual breakdown of your Signature Program modules, three concrete learning outcomes, and two sharp testimonials. If a buyer cannot understand what you do in 10 seconds, your one-sheet is too clever.</li>
+                <li><strong>A frictionless booking link:</strong> Eliminate the 6-email scheduling dance. One link for discovery calls, one link for paid bookings.</li>
+                <li><strong>A modular Statement of Work (SOW):</strong> A clean two-page agreement outlining scope, deliverables, dates, and payment terms (always 50% upfront to reserve dates, 50% upon delivery) that you can customize and send within two hours of a discovery call. Speed is a trust signal. A proposal sent in two hours feels premium. A proposal sent in two weeks feels forgettable.</li>
+              </ol>
+
+              <div class="mt-5 rounded-[20px] border-2 border-dashed border-[var(--orange)] bg-[#FFF0E8] dark:bg-[#2E1E16] p-5">
+                <p class="font-black">What you do NOT need yet:</p>
+                <p class="mt-1 leading-[1.8]">A fancy CRM, a course platform, a logo suite, an LLC debate, or a 12-page website. Those are Phase 2 problems.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- PART II -->
+        <section id="part2" class="pt-16 sm:pt-20 scroll-mt-24">
+          <div class="mb-8 sm:mb-10">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="bg-[var(--ink)] text-[var(--cream)] serif text-sm font-bold px-3 py-1.5 rounded-full">PART II</span>
+              <span class="text-[11px] font-bold tracking-[0.22em] uppercase text-[var(--orange)]">The Mindset</span>
+              <span class="h-px flex-1 bg-[var(--line)]"></span>
+            </div>
+            <h2 class="serif text-[clamp(2rem,5vw,3.6rem)] leading-[0.95] font-black tracking-[-0.02em]">You can’t gaslight yourself into confidence.</h2>
+            <p class="mt-4 text-base sm:text-lg leading-relaxed text-[var(--muted)] max-w-3xl">Confidence is not generated in isolation — it is reflected, borrowed, and stress-tested in community.</p>
+          </div>
+
+          <p class="leading-[1.8]">Somewhere between building my curriculum and pitching my first $10,000 corporate engagement, I hit a wall that no productivity hack could fix.</p>
+          <p class="mt-3 leading-[1.8]">Modern solopreneur advice pushes a quiet lie: that confidence is an internal battery you charge alone in a room through morning affirmations, cold plunges, and sheer willpower.</p>
+          <p class="mt-3 leading-[1.8]">It does not work. Humans are wired for social calibration, and confidence is not generated in isolation, it is reflected, borrowed, and stress-tested in community. When you are staring at three unanswered proposals and questioning whether you belong in the room, trying to “manifest” belief feels like trying to lift yourself off the floor by pulling on your own shoelaces.</p>
+
+          <div class="my-8 rounded-[24px] bg-[var(--surface)] border border-[var(--line)] p-5 sm:p-7">
+            <p class="text-[11px] font-black tracking-[0.18em] uppercase text-center text-[var(--muted)]">Diagram · The Architecture of Resilience</p>
+            <h3 class="serif text-2xl font-black text-center mt-1">Built bottom-up. Powered top-down.</h3>
+            <div class="max-w-[560px] mx-auto mt-6 space-y-2 text-center">
+              <div class="mx-auto w-[92%] sm:w-[52%] bg-[var(--orange)] text-white rounded-t-[18px] px-4 py-4"><p class="text-[11px] tracking-[0.16em] uppercase font-black">Relational Momentum · The Engine</p><p class="text-sm font-bold mt-1">Peers who reflect your strengths &amp; hold the line</p></div>
+              <div class="mx-auto w-[92%] sm:w-[72%] bg-[var(--amber)] text-black px-4 py-4"><p class="text-[11px] tracking-[0.16em] uppercase font-black">Borrowed Conviction · The Bridge</p><p class="text-sm font-bold mt-1">External belief that carries you through dips</p></div>
+              <div class="mx-auto w-[92%] bg-[var(--teal)] text-white rounded-b-[18px] px-4 py-4"><p class="text-[11px] tracking-[0.16em] uppercase font-black">Self-Worth · The Floor</p><p class="text-sm font-bold mt-1">Prevents self-sabotage &amp; underpricing</p></div>
+            </div>
+          </div>
+
+          <h3 class="serif text-2xl font-black">Why a Circle of Believers Outperforms Solo Grit</h3>
+          <ol class="list-decimal ml-5 mt-4 space-y-4 leading-[1.8]">
+            <li><strong>Borrowed conviction bridges the valley of death</strong> — Every independent trainer hits seasons where self-doubt spikes, usually right after a tough room, a lost bid, or a bold price increase. During those dips, you do not need self-help quotes; you need a peer who has seen your work look you in the eye and say, “I've watched you facilitate. You're underselling this by half.” You borrow their certainty until yours grows back.</li>
+            <li><strong>Accurate mirrors correct negativity bias</strong> — Left alone in your own head, your brain acts like a funhouse mirror, magnifying every awkward pause in a workshop while erasing the three executives who asked for your card afterward. Trusted peers act as objective historians, holding up receipts of your actual competence when imposter syndrome tries to rewrite your track record.</li>
+            <li><strong>Shared visibility turns paralysis into momentum</strong> — Working solo makes it dangerously easy to hide behind “research” and “tweaking slides.” When two or three fellow builders know what you committed to shipping by Friday, reluctance turns into execution. Accountability does not just make the work lighter; it makes finishing feel inevitable.</li>
+            <li><strong>Normalization kills shame</strong> — Solo trainers think everyone else is closing deals effortlessly. In a real peer circle, you learn that everyone gets ghosted, everyone has a bad room, everyone fears raising prices. That normalization is not comforting fluff. It is data that keeps you from quitting on a normal bad week.</li>
+          </ol>
+
+          <aside class="my-7 rounded-[22px] border-l-4 p-5 sm:p-6 bg-[var(--teal-soft)] border-[var(--teal)]">
+            <p class="text-[11px] font-black tracking-[0.18em] uppercase text-[var(--teal)] mb-2">AI Accelerator · The Cognitive De-Escalator</p>
+            <p class="text-[15px] leading-relaxed">AI can never replace human empathy, so I do not ask it for pep talks. Instead, I use it as an emotional filter before I call a mentor. When I am spiraling over a rejection, I brain-dump my messy, irrational fears into an LLM and ask it to separate objective facts from catastrophic assumptions. It clears the static so I can bring a sharp, grounded question to my human circle rather than raw panic. AI cleans the signal. Humans supply the belief.</p>
+          </aside>
+
+          <h3 class="serif text-2xl font-black mt-8">The Nuance Nobody Mentions</h3>
+          <p class="mt-3 leading-[1.8]">Self-worth still matters, but it functions as a floor, not an engine. High self-worth stops you from accepting disrespectful clients, tolerating scope creep, or slashing your rates out of desperation. It prevents self-sabotage.</p>
+          <p class="mt-3 leading-[1.8]">What actually propels you across the finish line into rooms you have never been in before is relational momentum, being surrounded by people who refuse to let you shrink when things get uncomfortable.</p>
+
+          <div class="grid sm:grid-cols-3 gap-3 my-6">
+            <div class="rounded-[20px] bg-[var(--surface)] border border-[var(--line)] p-5"><p class="serif text-3xl font-black text-[var(--orange)]">1</p><h4 class="font-black mt-1">Mentor</h4><p class="text-sm leading-relaxed text-[var(--muted)] mt-1">Someone 2 to 3 steps ahead who has sold what you want to sell</p></div>
+            <div class="rounded-[20px] bg-[var(--surface)] border border-[var(--line)] p-5"><p class="serif text-3xl font-black text-[var(--orange)]">2–3</p><h4 class="font-black mt-1">Peers</h4><p class="text-sm leading-relaxed text-[var(--muted)] mt-1">Fellow trainers or consultants at your level, meeting weekly or biweekly</p></div>
+            <div class="rounded-[20px] bg-[var(--surface)] border border-[var(--line)] p-5"><p class="serif text-3xl font-black text-[var(--orange)]">1</p><h4 class="font-black mt-1">Truth-teller</h4><p class="text-sm leading-relaxed text-[var(--muted)] mt-1">Someone who will tell you when your talk is flat or your price is too low, without softening it</p></div>
+          </div>
+
+          <div class="mt-6 rounded-[22px] bg-[var(--amber-soft)] border border-[var(--amber)] p-5 sm:p-6">
+            <p class="text-[11px] font-black tracking-[0.18em] uppercase">A 60-Second Reality Check</p>
+            <p class="mt-2 font-bold">Whenever you feel stalled on a big leap, ask yourself:</p>
+            <ul class="list-disc ml-5 mt-2 space-y-1 leading-[1.8]">
+              <li>Who in my life knows the unedited reality of what I am trying to build right now?</li>
+              <li>Who has witnessed my best work and would remind me of it in thirty seconds if I asked?</li>
+              <li>Am I waiting to “feel ready” before reaching out, when reaching out is the exact thing that creates readiness?</li>
+            </ul>
+            <p class="mt-3 leading-[1.8]">If you cannot answer the first two questions, your next business task is not a new funnel. It is finding your people.</p>
+          </div>
+        </section>
+
+        <!-- PART III -->
+        <section id="part3" class="pt-16 sm:pt-20 scroll-mt-24">
+          <div class="mb-8 sm:mb-10">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="bg-[var(--ink)] text-[var(--cream)] serif text-sm font-bold px-3 py-1.5 rounded-full">PART III</span>
+              <span class="text-[11px] font-bold tracking-[0.22em] uppercase text-[var(--orange)]">The Business</span>
+              <span class="h-px flex-1 bg-[var(--line)]"></span>
+            </div>
+            <h2 class="serif text-[clamp(2rem,5vw,3.6rem)] leading-[0.95] font-black tracking-[-0.02em]">Your price is set before you say a number.</h2>
+            <p class="mt-4 text-base sm:text-lg leading-relaxed text-[var(--muted)] max-w-3xl">Buyers do not purchase effort; they purchase certainty.</p>
+          </div>
+
+          <p class="leading-[1.8]">Early in my practice, I treated pricing like a math problem: estimate the prep hours, add the delivery hours, multiply by a respectable hourly rate, and hope the client did not flinch.</p>
+          <p class="mt-3 leading-[1.8]">Then I lost a bid to a consultant charging three times my quote, for half the workshop days.</p>
+          <p class="mt-3 leading-[1.8]">That loss taught me a fundamental law of B2B services: buyers do not purchase effort; they purchase certainty. And their perception of your certainty is locked in long before you ever mention a dollar figure. Nobody emails you to say, “Your discovery call felt unfocused and your proposal had formatting inconsistencies, so I mentally discounted your value by 40%.” They simply say, “We decided to go in another direction,” or vanish into silence.</p>
+
+          <div class="my-7 grid md:grid-cols-2 gap-3">
+            <div class="rounded-[22px] bg-[#FFF0E8] dark:bg-[#2E1E16] border border-[var(--orange)] p-5">
+              <p class="text-[11px] font-black tracking-[0.16em] uppercase text-[var(--orange)]">Path A · High risk</p>
+              <p class="font-black mt-2">[SLOPPY PRESENTATION] → Buyer Senses High Risk → Silent 40% Mental Discount</p>
+              <p class="text-sm mt-2 leading-relaxed">Vague outcomes, rambling explanations, hesitant language make a $1,500 fee feel like a gamble.</p>
+            </div>
+            <div class="rounded-[22px] bg-[var(--teal-soft)] border border-[var(--teal)] p-5">
+              <p class="text-[11px] font-black tracking-[0.16em] uppercase text-[var(--teal)]">Path B · Certainty</p>
+              <p class="font-black mt-2">[SHARP DIAGNOSIS] → Buyer Senses Certainty → Premium Fee Feels Like Insurance</p>
+              <p class="text-sm mt-2 leading-relaxed">Prompt follow-ups, sharp questions, zero jargon, clear deliverables make $12,000 feel like insurance.</p>
+            </div>
+          </div>
+
+          <h3 class="serif text-2xl font-black">The Invisible Risk Tax</h3>
+          <p class="mt-3 leading-[1.8]">When a VP of L&amp;D looks at your proposal, they are not calculating your hourly wage. They are running a silent risk assessment: If I put my reputation on the line to bring this person in front of 40 senior leaders, what are the odds I look like a hero versus the odds I have to clean up a mess?</p>
+          <ul class="list-disc ml-5 mt-3 space-y-2 leading-[1.8]">
+            <li><strong>Precision signals safety:</strong> Prompt follow-ups, sharp diagnostic questions, zero jargon, and crystal-clear deliverables make a $12,000 fee feel like insurance against failure.</li>
+            <li><strong>Friction signals risk:</strong> Vague outcomes, rambling explanations, or hesitant language make a $1,500 fee feel like a gamble.</li>
+          </ul>
+
+          <blockquote class="my-9 relative rounded-[24px] bg-[var(--ink)] text-[var(--cream)] p-6 sm:p-9 overflow-hidden">
+            <p class="serif text-[clamp(1.4rem,3.2vw,2.1rem)] leading-[1.15] font-semibold italic">“When you under-present, you under-price. The discount never appears as a line item on your invoice — it gets deducted silently inside the buyer’s mind.”</p>
+          </blockquote>
+
+          <h3 class="serif text-2xl font-black mt-10">Three Levers That Command Premium Fees</h3>
+          <div class="mt-5 space-y-6">
+            <div class="rounded-[22px] bg-[var(--surface)] border border-[var(--line)] p-5 sm:p-6">
+              <div class="flex gap-3">
+                <span class="w-9 h-9 shrink-0 rounded-full bg-[var(--ink)] text-[var(--cream)] grid place-items-center font-black">1</span>
+                <div>
+                  <h4 class="font-black text-lg leading-tight">Diagnose Before You Prescribe</h4>
+                  <p class="mt-2 leading-[1.8] text-[15px]">Vendors lead with their catalog (“Here are the 12 workshops I offer”). Strategic partners lead with a diagnosis so sharp the buyer feels relieved just hearing it articulated. When you accurately name the downstream cost of their team's current bottleneck, missed deadlines, engineering churn, stalled initiatives, your fee stops being compared to a training budget and starts being compared to the cost of inaction.</p>
+                  <p class="mt-3 leading-[1.8]"><strong>Use this discovery formula: Symptom &gt; Cost &gt; Cause &gt; Consequence &gt; Commitment.</strong> Ask: What is happening? What is it costing you? Why do you think it keeps happening? What happens if it continues for another quarter? What would solving it be worth?</p>
+                  <aside class="my-5 rounded-[22px] border-l-4 p-5 bg-[var(--amber-soft)] border-[var(--amber)]">
+                    <p class="text-[11px] font-black tracking-[0.18em] uppercase text-[var(--orange)] mb-2">AI Accelerator · Pre-Call Intelligence Briefing</p>
+                    <p class="text-[15px] leading-relaxed">Thirty minutes before any discovery call, feed the company's annual report, recent press releases, job postings (which reveal what skills they are struggling to hire for), and the buyer's LinkedIn profile into AI. Ask it to generate three sharp hypotheses about internal friction points. Asking “I noticed you're scaling your backend team by 30% this quarter, how are your senior ICs handling the sudden jump in code-review load?” immediately separates you from 99% of trainers.</p>
+                  </aside>
+                </div>
+              </div>
+            </div>
+
+            <div class="rounded-[22px] bg-[var(--surface)] border border-[var(--line)] p-5 sm:p-6">
+              <div class="flex gap-3">
+                <span class="w-9 h-9 shrink-0 rounded-full bg-[var(--ink)] text-[var(--cream)] grid place-items-center font-black">2</span>
+                <div>
+                  <h4 class="font-black text-lg leading-tight">Eliminate Every Millimeter of Ambiguity</h4>
+                  <p class="mt-2 leading-[1.8] text-[15px]">Confusion kills deals faster than high prices. If a buyer has to squint to understand who attends, what pre-work is required, how success is measured, or what happens after the session, they stall. Ambiguity creates internal friction when your champion tries to get budget approval from finance.</p>
+                  <p class="mt-3 leading-[1.8]">Your proposal should answer, in one page: Who is this for, what problem does it solve, what exactly happens, what do they walk away with, how will we measure success, and what is the investment.</p>
+                  <aside class="my-5 rounded-[22px] border-l-4 p-5 bg-[var(--amber-soft)] border-[var(--amber)]">
+                    <p class="text-[11px] font-black tracking-[0.18em] uppercase text-[var(--orange)] mb-2">AI Accelerator · The Friction Audit</p>
+                    <p class="text-[15px] leading-relaxed">Before sending any proposal, run it through an LLM with explicit instructions to highlight every vague phrase (“ongoing support,” “tailored modules,” “improved alignment”) and force you to replace it with concrete, observable deliverables. If AI cannot picture what you mean, neither can your buyer.</p>
+                  </aside>
+                </div>
+              </div>
+            </div>
+
+            <div class="rounded-[22px] bg-[var(--surface)] border border-[var(--line)] p-5 sm:p-6">
+              <div class="flex gap-3">
+                <span class="w-9 h-9 shrink-0 rounded-full bg-[var(--ink)] text-[var(--cream)] grid place-items-center font-black">3</span>
+                <div>
+                  <h4 class="font-black text-lg leading-tight">State Your Fee Like a Weather Report</h4>
+                  <p class="mt-2 leading-[1.8] text-[15px]">Apologetic phrasing destroys authority in half a second. Compare these two deliveries:</p>
+                  <div class="grid sm:grid-cols-2 gap-3 my-4">
+                    <div class="rounded-2xl bg-[#FFF0E8] dark:bg-[#2E1E16] border border-[var(--orange)] p-4">
+                      <p class="text-xs font-black text-[var(--orange)]">❌ THE SELF-DISCOUNT</p>
+                      <p class="text-sm leading-relaxed mt-2">“For a two-day offsite like this, I usually charge around $8,500, though I know budgets are tight right now so we can definitely play around with the numbers if that feels steep.” (You just signaled that your price is arbitrary and you do not fully believe in it.)</p>
+                    </div>
+                    <div class="rounded-2xl bg-[var(--teal-soft)] border border-[var(--teal)] p-4">
+                      <p class="text-xs font-black text-[var(--teal)]">✅ THE ANCHOR</p>
+                      <p class="text-sm leading-relaxed mt-2">“The investment for the full two-day Leadership Intensive, including the pre-workshop team diagnostic, custom simulations, and the 30-day manager follow-up lab, is $8,500.” (Stop talking. Hold eye contact or stay silent on the line.)</p>
+                    </div>
+                  </div>
+                  <p class="leading-[1.8]">Silence after stating a price is not awkward; it is the sound of a buyer doing the math and respecting your composure.</p>
+                  <p class="mt-3 font-bold">Pricing architecture that works:</p>
+                  <ul class="list-disc ml-5 mt-2 space-y-1 leading-[1.8]">
+                    <li><strong>Single-day workshop:</strong> Entry point, but never your only offer</li>
+                    <li><strong>Intensive + Follow-up:</strong> Your core, premium offer. The follow-up is what creates lasting change and justifies the fee</li>
+                    <li><strong>Cohort / Retainer:</strong> Recurring revenue, deeper transformation, and the easiest upsell because trust is already built</li>
+                  </ul>
+                  <p class="mt-3 leading-[1.8] font-bold">Never discount the fee. If you must flex, flex the scope, not the price. Remove the follow-up lab, shorten the cohort, or reduce headcount, but keep your rate intact. Discounting trains buyers to negotiate. Scoping trains them to respect your structure.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-8">
+            <h3 class="serif text-2xl font-black">The 5-Point Packaging Audit</h3>
+            <p class="mt-2 leading-[1.8]">Before you ever lower a rate, run your sales process through these five filters:</p>
+            <div class="overflow-x-auto my-5 rounded-[20px] border border-[var(--line)] bg-[var(--surface)]">
+              <table class="w-full min-w-[680px] text-left text-sm">
+                <thead><tr class="bg-[var(--ink)] text-[var(--cream)]"><th class="p-4">Audit Checkpoint</th><th class="p-4">Low-Trust Signal (Commodity)</th><th class="p-4 bg-[var(--teal)]">High-Trust Signal (Partner)</th></tr></thead>
+                <tbody class="[&>tr]:border-t [&>tr]:border-[var(--line)]">
+                  <tr><td class="p-4 font-bold">1. The Opening</td><td class="p-4">Starts with your bio, credentials, and logo</td><td class="p-4">Starts with their acute problem and desired state</td></tr>
+                  <tr><td class="p-4 font-bold">2. Discovery Call</td><td class="p-4">Asks basic questions found on their website</td><td class="p-4">Brings hypotheses based on hiring &amp; market signals</td></tr>
+                  <tr><td class="p-4 font-bold">3. The Framing</td><td class="p-4">“Cost for 1 day of facilitation”</td><td class="p-4">“Investment in the 90-Day Technical Lead Accelerator”</td></tr>
+                  <tr><td class="p-4 font-bold">4. Verbal Leaks</td><td class="p-4">Uses “just,” “roughly,” “try to,” “if that's okay”</td><td class="p-4">Direct, declarative statements without hedges</td></tr>
+                  <tr><td class="p-4 font-bold">5. The Mirror Test</td><td class="p-4">Dense text walls with vague outcomes</td><td class="p-4">Scannable deliverables, clear timeline, defined ROI</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <aside class="my-7 rounded-[22px] border-l-4 p-5 sm:p-6 bg-[var(--amber-soft)] border-[var(--amber)]">
+              <p class="text-[11px] font-black tracking-[0.18em] uppercase text-[var(--orange)] mb-2">AI Accelerator · The Red-Team Buyer Simulation</p>
+              <p class="text-[15px] leading-relaxed">Paste your finished proposal into an LLM and tell it to roleplay a cynical CFO or time-starved VP of HR looking for reasons to say no. Fixing the three objections it surfaces before the client sees the document routinely saves deals.</p>
+            </aside>
+          </div>
+
+          <div class="mt-8 rounded-[22px] bg-[var(--ink)] text-[var(--cream)] p-5 sm:p-7">
+            <p class="text-[11px] tracking-[0.18em] uppercase font-black text-[var(--amber)]">The Non-Negotiable Caveat</p>
+            <p class="mt-3 leading-[1.8]">Sharp packaging elevates your ceiling, but delivery determines whether you stay there. High-gloss marketing wrapped around mediocre facilitation is just an accelerated path to burning your reputation. The sequence is absolute: build real mastery first, then make that mastery legible. Most independent trainers are not under-skilled, they are simply under-translated.</p>
+            <p class="serif text-2xl font-black mt-4">Stop lowering your price. Start raising your clarity.</p>
+          </div>
+        </section>
+
+        <!-- PART IV: PROMPT LIBRARY -->
+        <section id="part4" class="pt-16 sm:pt-20 scroll-mt-24">
+          <div class="mb-8 sm:mb-10">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="bg-[var(--ink)] text-[var(--cream)] serif text-sm font-bold px-3 py-1.5 rounded-full">PART IV</span>
+              <span class="text-[11px] font-bold tracking-[0.22em] uppercase text-[var(--orange)]">The AI Operating System</span>
+              <span class="h-px flex-1 bg-[var(--line)]"></span>
+            </div>
+            <h2 class="serif text-[clamp(2rem,5vw,3.6rem)] leading-[0.95] font-black tracking-[-0.02em]">My Master Prompt Library</h2>
+            <p class="mt-4 text-base sm:text-lg leading-relaxed text-[var(--muted)] max-w-3xl">I do not use AI to replace my expertise, stories, or facilitation instincts. I treat it like a sharp, hyper-literate chief of staff: I supply the strategy, raw insights, and final judgment; it handles structural heavy lifting, pattern recognition, and rapid prototyping.</p>
+          </div>
+
+          <p class="leading-[1.8]">Copy, customize, and save these prompts as reusable templates across every stage of your practice. For each one, paste your real context in brackets. The more specific your input, the less generic the output.</p>
+
+          <div class="my-6 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <div class="flex flex-wrap gap-2">
+              <button type="button" data-filter-btn="All" onclick="setFilter('All')" class="px-4 py-2 rounded-full text-sm font-bold border bg-[var(--ink)] text-[var(--cream)] border-[var(--ink)] cursor-pointer">All 16 prompts</button>
+              <button type="button" data-filter-btn="Phase 1" onclick="setFilter('Phase 1')" class="px-4 py-2 rounded-full text-sm font-bold border bg-[var(--surface)] border-[var(--line)] hover:bg-[var(--cream-2)] cursor-pointer">Phase 1</button>
+              <button type="button" data-filter-btn="Phase 2" onclick="setFilter('Phase 2')" class="px-4 py-2 rounded-full text-sm font-bold border bg-[var(--surface)] border-[var(--line)] hover:bg-[var(--cream-2)] cursor-pointer">Phase 2</button>
+              <button type="button" data-filter-btn="Phase 3" onclick="setFilter('Phase 3')" class="px-4 py-2 rounded-full text-sm font-bold border bg-[var(--surface)] border-[var(--line)] hover:bg-[var(--cream-2)] cursor-pointer">Phase 3</button>
+              <button type="button" data-filter-btn="Phase 4" onclick="setFilter('Phase 4')" class="px-4 py-2 rounded-full text-sm font-bold border bg-[var(--surface)] border-[var(--line)] hover:bg-[var(--cream-2)] cursor-pointer">Phase 4</button>
+              <button type="button" data-filter-btn="Phase 5" onclick="setFilter('Phase 5')" class="px-4 py-2 rounded-full text-sm font-bold border bg-[var(--surface)] border-[var(--line)] hover:bg-[var(--cream-2)] cursor-pointer">Phase 5</button>
+            </div>
+            <input id="prompt-search" type="search" placeholder="Search prompts..." aria-label="Search prompts" class="px-4 py-2 rounded-full text-sm bg-[var(--surface)] border border-[var(--line)] focus:outline-none focus:border-[var(--orange)] w-full sm:w-60" />
+          </div>
+
+          <p id="prompt-count" class="text-sm text-[var(--muted)] mb-5">Showing 16 of 16 prompts · Click Copy prompt to copy any template.</p>
+
+          <div id="prompts-container"></div>
+
+          <!-- Guardrails -->
+          <div class="mt-10 rounded-[26px] bg-[var(--ink)] text-[var(--cream)] p-5 sm:p-7">
+            <p class="text-[11px] font-black tracking-[0.2em] uppercase text-[var(--amber)]">My 3 Guardrails for AI-Augmented Trainers</p>
+            <h3 class="serif text-2xl sm:text-3xl font-black mt-3">THE HUMAN-AI DIVISION OF LABOR</h3>
+            <div class="grid sm:grid-cols-2 gap-3 mt-5">
+              <div class="rounded-[18px] bg-white/10 p-5">
+                <p class="font-black text-[var(--amber)]">AI OWNS (Structure &amp; Speed)</p>
+                <ul class="mt-2 space-y-1.5 text-sm leading-relaxed">
+                  <li>• Raw pattern clustering</li>
+                  <li>• Agenda timing &amp; scaffolding</li>
+                  <li>• Proposal friction audits</li>
+                  <li>• Content format repurposing</li>
+                </ul>
+              </div>
+              <div class="rounded-[18px] bg-[var(--orange)] p-5 text-white">
+                <p class="font-black">YOU OWN (Soul &amp; Judgment)</p>
+                <ul class="mt-2 space-y-1.5 text-sm leading-relaxed">
+                  <li>• Lived stories &amp; scars</li>
+                  <li>• Contrarian points of view</li>
+                  <li>• Live room reading &amp; presence</li>
+                  <li>• Final editorial taste</li>
+                </ul>
+              </div>
+            </div>
+            <ol class="list-decimal ml-5 mt-5 space-y-3 leading-[1.8]">
+              <li><strong>Never outsource your point of view:</strong> If you ask AI to “write a workshop on leadership,” it will hand you sanitized, Wikipedia-level clichés that any participant could generate themselves in ten seconds. Feed AI your frameworks, your contrarian opinions, and your messy real-world stories first, then let it organize and expand them.</li>
+              <li><strong>Hunt and destroy “AI tells”:</strong> Before anything reaches a client or LinkedIn feed, strip out robotic transitions and overused LLM filler (“delve,” “tapestry,” “testament to,” “in today's fast-paced landscape,” “unlock your potential”). If you would not say a sentence out loud over coffee with a peer, cut it.</li>
+              <li><strong>Keep the human moments sacred:</strong> AI builds the architecture, sharpens the pitch, and clears the admin queue so that when you step into the room, or onto the call, you are 100% present, unhurried, and deeply human. That presence is the one thing no algorithm can ever commoditize.</li>
+            </ol>
+          </div>
+        </section>
+
+        <!-- 30-DAY SPRINT -->
+        <section id="sprint" class="pt-16 sm:pt-20 scroll-mt-24">
+          <div class="mb-8 sm:mb-10">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="bg-[var(--ink)] text-[var(--cream)] serif text-sm font-bold px-3 py-1.5 rounded-full">30-DAY SPRINT</span>
+              <span class="text-[11px] font-bold tracking-[0.22em] uppercase text-[var(--orange)]">Your 30-Day Launch Sprint</span>
+              <span class="h-px flex-1 bg-[var(--line)]"></span>
+            </div>
+            <h2 class="serif text-[clamp(2rem,5vw,3.6rem)] leading-[0.95] font-black tracking-[-0.02em]">If you are starting from zero, do not try to do everything. Do this:</h2>
+          </div>
+
+          <div class="relative">
+            <div class="absolute left-[19px] sm:left-[27px] top-2 bottom-2 w-px bg-[var(--line)]"></div>
+            <div class="space-y-4">
+              <div class="relative pl-[52px] sm:pl-[68px]">
+                <span class="absolute left-0 top-0 w-10 h-10 sm:w-14 sm:h-14 rounded-full grid place-items-center text-white font-black serif bg-[var(--teal)] shadow-lg">W1</span>
+                <div class="rounded-[20px] bg-[var(--surface)] border border-[var(--line)] p-5"><h4 class="serif font-black text-xl">Week 1: Clarity</h4><p class="mt-1 leading-[1.8]">Pick your bleeding neck problem. Interview 5 ideal buyers. Extract their language with Prompt 1.</p></div>
+              </div>
+              <div class="relative pl-[52px] sm:pl-[68px]">
+                <span class="absolute left-0 top-0 w-10 h-10 sm:w-14 sm:h-14 rounded-full grid place-items-center text-white font-black serif bg-[var(--orange)] shadow-lg">W2</span>
+                <div class="rounded-[20px] bg-[var(--surface)] border border-[var(--line)] p-5"><h4 class="serif font-black text-xl">Week 2: Build</h4><p class="mt-1 leading-[1.8]">Name your framework. Build the accordion version: keynote, intensive, cohort. Use Prompts 3, 4, and 5.</p></div>
+              </div>
+              <div class="relative pl-[52px] sm:pl-[68px]">
+                <span class="absolute left-0 top-0 w-10 h-10 sm:w-14 sm:h-14 rounded-full grid place-items-center text-black font-black serif bg-[var(--amber)] shadow-lg">W3</span>
+                <div class="rounded-[20px] bg-[var(--surface)] border border-[var(--line)] p-5"><h4 class="serif font-black text-xl">Week 3: Prove</h4><p class="mt-1 leading-[1.8]">Run one free lunch-and-learn or podcast. Record it. Cut your sizzle reel. Use Prompts 6 and 7.</p></div>
+              </div>
+              <div class="relative pl-[52px] sm:pl-[68px]">
+                <span class="absolute left-0 top-0 w-10 h-10 sm:w-14 sm:h-14 rounded-full grid place-items-center text-[var(--cream)] font-black serif bg-[var(--ink)] shadow-lg">W4</span>
+                <div class="rounded-[20px] bg-[var(--surface)] border border-[var(--line)] p-5"><h4 class="serif font-black text-xl">Week 4: Sell</h4><p className="mt-1 leading-[1.8]">Pitch your paid beta cohort to 10 warm contacts. Send 10 outreach emails. Use Prompts 8, 9, and 10.</p></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-8 rounded-[24px] bg-[var(--orange)] text-white p-6 sm:p-8 text-center">
+            <p class="serif text-[clamp(1.5rem,3.5vw,2.4rem)] font-black leading-tight">One niche. One framework. One channel. One circle. One price you state without flinching.</p>
+            <p class="mt-3 text-lg font-bold">That is the whole business.</p>
+            <div class="mt-5 flex flex-wrap justify-center gap-2">
+              <a href="#part1" class="bg-white text-black px-4 py-2.5 rounded-full text-sm font-black">Re-read Part I</a>
+              <a href="#part4" class="bg-black/25 px-4 py-2.5 rounded-full text-sm font-black">Open Prompt Library</a>
+              <button type="button" id="toggle-closing-note" class="bg-black/25 px-4 py-2.5 rounded-full text-sm font-black cursor-pointer">Show the closing note</button>
+            </div>
+            <p id="closing-note-box" class="hidden mt-5 text-sm leading-relaxed bg-black/20 rounded-2xl p-4 max-w-2xl mx-auto">You now have the flywheel, the pricing architecture, the resilience system, and 16 copy-ready prompts. Start with Week 1 — one sharp problem, five real conversations, and language borrowed from the people you want to serve.</p>
+          </div>
+
+          <div class="mt-8 h-px bg-gradient-to-r from-transparent via-[var(--orange)] to-transparent"></div>
+          <div class="mt-6 flex flex-wrap items-center justify-between gap-3 text-xs text-[var(--muted)]">
+            <p>The AI-Augmented Freelance Trainer · Complete Playbook</p>
+            <p>Read · Build · Prove · Sell — in 30 days</p>
+            <a href="#top" class="font-bold text-[var(--ink)]">Back to top ↑</a>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
